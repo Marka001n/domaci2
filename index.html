@@ -78,14 +78,14 @@
 
                         <form class="mt-5 col-8 offset-2" id="forma">
                             <div class="mb-3">
-                                <label for="nazivFilma" class="form-label">Naziv filma</label>
-                                <input type="text" class="form-control inputi" placeholder="Naziv filma je obavezan"
+                                <label for="nazivFilma" class="form-label">Naziv filma <b>*</b></label>
+                                <input type="text" class="form-control inputi" placeholder="Unesite naziv filma"
                                     id="nazivFilma">
                                 <div class="form-tex" id="porukaJSsNaziv">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="godinaInput" class="form-label">Godina</label>
+                                <label for="godinaInput" class="form-label">Godina <b>*</b></label>
                                 <input type="number" class="form-control inputi"
                                     placeholder="Godinu unesite od 1930. do 2021." id="godinaInput">
                                 <div class="form-text" id="porukaJsGodina">
@@ -103,7 +103,7 @@
                                     <div class="form-text" id="tekstIspodInputa"></div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="glumciInput" class="form-label">Glumci:</label>
+                                    <label for="glumciInput" class="form-label">Glumci <b>*</b></label>
                                     <input type="text" placeholder="*Glumce odvajajte zarezima!"
                                         class="form-control inputi" id="glumciInput">
                                     <div class="form-text" id="porukaJsGlumci"></div>
@@ -113,6 +113,11 @@
                                     <input type="checkbox" class="form-check-input" value="odgledano"
                                         id="odgledanoCheck">
                                     <label class="form-check-label" for="odgledanoCheck">Odgledano?</label>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="tekstzvijezdica">
+                                        <P>Polja oznacena zvijezdicom(*) su obavezna</P>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-primary" data-dismiss="modal">Dodaj
